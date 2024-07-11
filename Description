@@ -1,0 +1,6 @@
+Edeoja Abel
+BU/22C/IT/7110
+My API deals with book and author management. 
+a full list of books from the feeder class can be obtained or a specific book can be obtained using the book id.
+i was not able to fully implement all my get methods (like the getbyGenreId) and my update method is not working properly.
+The delete method works, as well as the create method (though it only creates an empty instance but with the next ID).
