@@ -34,29 +34,31 @@ namespace BookAPI.Controllers
             return Ok(bk);
         }
 
-        [HttpGet("{GenreId}")]
+        [HttpGet("ByGenre/{id}")]
 
-        public ActionResult GetBookByGenreId(string GenreId)
+        public ActionResult GetBookByGenreId(string id)
         {
-            foreach (var book in _context.Books)
-            {
+            var books = _context.Books
+                .Where(book => book.GenreId == id)
+                .ToArray();
 
-                if (_context.Genres.Any(b => b.Id == book.GenreId && b.Id == GenreId))
-                {
-
-                    return Ok(book);
-
-                }
-                else
-                {
-
-                    return NotFound();
-                }
-            }
-
-            return BadRequest();
+            return Ok(books);
 
         }
+
+        [HttpGet("ByAuthor/{id}")]
+
+        public ActionResult GetBookByAuthorId(int id)
+        {
+            var books = _context.Books
+                .Where(book => book.AuthorId == id)
+                .ToArray();
+           
+            return Ok(books);
+
+        }
+
+
 
         [HttpPost]
         public async Task<ActionResult<Book>> PostBook(Book book)
@@ -99,6 +101,7 @@ namespace BookAPI.Controllers
 
             return NoContent();
         }
+
 
 
         [HttpDelete("{id}")]

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I0SaQ4IYLuul9p396UIAq7V6YsbyDyoq2Jil9LO21nHBZ+VHXArU1xirdjo7Q68ViuVd0gffvTtubWCLYiRzxA==",
+  "dgSpecHash": "EF5+8SF4cNGU1Ppnmn4o2xAG2ySKo4ykn/qPeyKVOzO88sLd7+ZE/Ad8JFzUbYIzRxSMQMjG6ZvDII4QbTgGqg==",
   "success": true,
-  "projectFilePath": "C:\\COM205_Programming2_2024Q1\\CPlusPlus\\BookAPI\\BookAPI\\BookAPI.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Desktop\\BookAPI\\BookAPI\\BookAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.32\\microsoft.entityframeworkcore.6.0.32.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.32\\microsoft.entityframeworkcore.abstractions.6.0.32.nupkg.sha512",
